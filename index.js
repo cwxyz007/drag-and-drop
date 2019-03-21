@@ -98,8 +98,8 @@ window.onload = () => {
     if (dragObj.type === 'toolbox') {
       const style = getComputedStyle($root)
       const rect = {
-        x: parseInt(style.left),
-        y: parseInt(style.top),
+        x: parseInt(style.left) + 7,
+        y: parseInt(style.top) + 50,
         w: $root.clientWidth,
         h: $root.clientHeight,
       }

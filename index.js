@@ -1,6 +1,8 @@
-const rootEl = document.getElementById('root')
-const width = rootEl.clientWidth
-const height = rootEl.clientHeight
+const $root = document.getElementById('root')
+const $toolbox = document.getElementById('toolbox')
+const $current = document.getElementById('current')
+const width = $root.clientWidth
+const height = $root.clientHeight
 
 const dragObj = {
   current: {
@@ -16,10 +18,6 @@ const dragObj = {
 }
 
 window.onload = () => {
-  const $root = document.getElementById('root')
-  const $toolbox = document.getElementById('toolbox')
-  const $current = document.getElementById('current')
-
   function addRootObj(el) {
     el.addEventListener('mousedown', (e) => {
       dragObj.current.el = el
